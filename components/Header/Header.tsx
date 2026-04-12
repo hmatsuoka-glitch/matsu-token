@@ -1,11 +1,28 @@
+'use client';
+import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
         <h1 className={styles.headerLogo}>
-          <a href="#top">
+          <a href="#top" onClick={closeMenu}>
             <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
               <text x="0" y="32" fontFamily="Sen, sans-serif" fontSize="24" fontWeight="700" fill="#3FB5EA">
                 MATSUTOKEN
@@ -42,7 +59,44 @@ export default function Header() {
           <a className={`${styles.ctaBtn} ${styles.ctaBtnGreen}`} href="#contact">まずはお見積り</a>
           <a className={`${styles.ctaBtn} ${styles.ctaBtnBlue}`} href="#contact">個人のお客様はこちら</a>
         </div>
+
+        <button
+          className={`${styles.hamburger} ${isMenuOpen ? styles.hamburgerActive : ''}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="メニュー"
+          aria-expanded={isMenuOpen}
+        >
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+        </button>
       </div>
+
+      <div
+        className={`${styles.overlay} ${isMenuOpen ? styles.overlayActive : ''}`}
+        onClick={closeMenu}
+      />
+
+      <nav className={`${styles.drawer} ${isMenuOpen ? styles.drawerActive : ''}`}>
+        <ul className={styles.drawerMenu}>
+          <li><a href="#top" onClick={closeMenu}>ホーム</a></li>
+          <li><a href="#feature" onClick={closeMenu}>まつ塗研の特徴</a></li>
+          <li><a href="#service" onClick={closeMenu}>事業内容</a></li>
+          <li><a href="#about" onClick={closeMenu}>会社概要</a></li>
+          <li><a href="#works" onClick={closeMenu}>施工実績</a></li>
+          <li><a href="#recruit" onClick={closeMenu}>採用情報</a></li>
+        </ul>
+        <div className={styles.drawerTel}>
+          <p className={styles.drawerTelLabel}>TEL.</p>
+          <a href="tel:0854323181" className={styles.drawerTelNum}>0854-32-3181</a>
+          <p className={styles.drawerTelTime}>［受付時間］月〜金 9:00〜17:00</p>
+        </div>
+        <div className={styles.drawerCta}>
+          <a href="#contact" className={styles.drawerCtaBtn} onClick={closeMenu}>
+            まずはお見積り
+          </a>
+        </div>
+      </nav>
     </header>
   );
 }

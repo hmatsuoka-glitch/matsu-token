@@ -225,24 +225,30 @@
 
 @media screen and (max-width: 767px) {
   .homeWorks {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 56px 0;
+  }
+  .ttlarea, .worksSlide, .btnWrap {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .worksSlide {
+    margin-bottom: 16px;
   }
   .worksSlideItem {
     flex: 0 0 100%;
   }
-  .ttlarea, .worksSlide, .btnWrap {
-    width: 90%;
-  }
   .homeTtlDeco {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 15vw;
+    line-height: 1.1;
     letter-spacing: 2px;
     top: 0;
   }
+  .fontEn {
+    font-size: 2.5rem;
+  }
   .fontJp {
-    font-size: 22px;
-    letter-spacing: 4px;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
   }
   .controlBtn {
     width: 44px;
@@ -251,12 +257,16 @@
   .worksSlideControl {
     gap: 12px;
   }
+  .arrow::before {
+    width: 10px;
+    height: 10px;
+  }
   .postImg {
     height: 220px;
   }
   .postInfo > p {
-    font-size: 0.8em;
-    min-width: 6em;
+    min-width: 6.5em;
+    font-size: 0.75rem;
   }
   .btnWrap a {
     padding: 14px 32px;

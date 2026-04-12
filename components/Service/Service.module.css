@@ -213,25 +213,72 @@
 
 @media screen and (max-width: 767px) {
   .homeService {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    margin-bottom: 48px;
+    padding: 40px 0;
+    margin-bottom: 56px;
+  }
+  .homeService::before {
+    width: 96vw;
+    background-size: cover;
+    background-position: right bottom;
+  }
+  .serviceContent {
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 5%;
+    gap: 24px;
+  }
+  .txtarea {
+    width: 100%;
+  }
+  .cercleList {
+    min-width: auto;
+    width: 100%;
+  }
+  .cercleList ul {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 16px;
   }
   .cercleList li {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
+    font-size: 0.75rem;
   }
   .cercleTxt {
-    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  .cercleTtl {
+    writing-mode: horizontal-tb;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  .homeTtlDecoVertical {
+    display: none;
   }
   .homeTtlDeco {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 15vw;
+    line-height: 1.1;
+    letter-spacing: 2px;
+  }
+  .fontEn {
+    font-size: 2.5rem;
+  }
+  .fontJp {
+    font-size: 1.25rem;
     letter-spacing: 4px;
   }
   .serviceText {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 0.875rem;
+    line-height: 1.8;
     letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cercleList li {
+    width: 95px;
+    height: 95px;
+    font-size: 0.6875rem;
   }
 }

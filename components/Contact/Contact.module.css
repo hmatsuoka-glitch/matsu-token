@@ -113,28 +113,41 @@
 
 @media screen and (max-width: 767px) {
   .sectionContact {
-    padding: 48px 0;
+    padding: 80px 5% 100px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner {
+    padding: 0;
+  }
+  .fontEn {
+    font-size: 2.5rem;
   }
   .fontJp {
-    font-size: 22px;
+    font-size: 1.25rem;
     letter-spacing: 4px;
   }
   .contactText {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 0.875rem;
+    line-height: 1.8;
     letter-spacing: 1.5px;
     margin-bottom: 24px;
   }
   .homeTtlDeco {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 15vw;
+    line-height: 1.1;
     letter-spacing: 2px;
   }
   .contactTel {
-    font-size: 24px;
+    display: block;
+    padding: 16px;
+    font-size: 1.5rem;
   }
   .contactBtn {
-    padding: 16px 32px;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
     font-size: 15px;
+    justify-content: center;
   }
 }

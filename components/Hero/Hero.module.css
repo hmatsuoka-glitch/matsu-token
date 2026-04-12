@@ -146,40 +146,57 @@
   .hero {
     height: auto;
     min-height: 560px;
-    margin-bottom: 40px;
-  }
-  .heroTitle {
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 2px;
-  }
-  .heroText {
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 1.5px;
-    margin-top: 16px;
+    margin-bottom: 56px;
   }
   .heroSlide {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 100%;
   }
   .heroCatch {
-    left: 16px;
-    right: 16px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5%;
     bottom: 32px;
     max-width: none;
   }
+  .heroTitle {
+    margin-bottom: 32px;
+    font-size: 1.75rem;
+    letter-spacing: 0.2em;
+    line-height: 1.6;
+  }
+  .heroText {
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    margin-top: 16px;
+  }
   .ctaButtons {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-top: 24px;
   }
   .ctaBtn {
-    padding: 14px 24px;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
     font-size: 0.875rem;
     justify-content: center;
   }
   .scrollIndicator {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
   }
 }

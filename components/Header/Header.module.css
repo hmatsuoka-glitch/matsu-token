@@ -129,6 +129,164 @@
   opacity: 0.8;
 }
 
+/* ハンバーガーボタン */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  z-index: 1001;
+  padding: 0;
+}
+
+.hamburgerLine {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-main, #3FB5EA);
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburgerLine:nth-child(1) { top: 0; }
+.hamburgerLine:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.hamburgerLine:nth-child(3) { bottom: 0; }
+
+.hamburgerActive .hamburgerLine:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.hamburgerActive .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+.hamburgerActive .hamburgerLine:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* オーバーレイ */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.overlayActive {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ドロワー */
+.drawer {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 80%;
+  max-width: 320px;
+  height: calc(100vh - 60px);
+  background-color: #fff;
+  z-index: 1000;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  padding: 24px 7% 24px 7%;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.drawerActive {
+  transform: translateX(0);
+}
+
+.drawerMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.drawerMenu li {
+  border-bottom: 1px solid #eee;
+}
+
+.drawerMenu a {
+  display: block;
+  padding: 18px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.drawerMenu a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid var(--clr-main, #3FB5EA);
+  border-right: 2px solid var(--clr-main, #3FB5EA);
+  transform: rotate(45deg);
+}
+
+.drawerTel {
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 16px 0;
+}
+
+.drawerTelLabel {
+  font-size: 0.75rem;
+  color: var(--clr-main, #3FB5EA);
+  margin-bottom: 4px;
+}
+
+.drawerTelNum {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-main, #3FB5EA);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.drawerTelTime {
+  font-size: 0.6875rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+.drawerCta {
+  padding: 0 16px;
+}
+
+.drawerCtaBtn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+  color: #fff;
+  text-align: center;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
   .gnav {
     gap: 0 24px;
@@ -141,11 +299,35 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
+  .header {
+    height: 64px;
+  }
+  .inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .gnav,
-  .telReception,
-  .ctaButtons {
+  .ctaButtons,
+  .telReception {
     display: none;
+  }
+  .headerLogo a {
+    height: 64px;
+  }
+  .headerLogo a svg,
+  .headerLogo a img {
+    max-height: 40px;
+    height: auto;
+  }
+  .hamburger {
+    display: block;
+  }
+  .overlay {
+    display: block;
+  }
+  .drawer {
+    display: block;
   }
 }
 
@@ -153,15 +335,19 @@
   .header {
     height: 60px;
   }
-  .inner {
-    padding: 0 16px;
-  }
   .headerLogo a {
     height: 60px;
   }
   .headerLogo a svg,
   .headerLogo a img {
-    height: 32px;
+    max-height: 32px;
+    height: auto;
+  }
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
   }
   .telNumber {
     font-size: 18px;

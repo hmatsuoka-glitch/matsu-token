@@ -99,31 +99,47 @@
 }
 
 @media screen and (max-width: 767px) {
+  .homeRecruit {
+    padding: 56px 0;
+    flex-direction: column;
+  }
   .inner {
-    padding: 48px 20px;
+    padding: 0 5%;
+    flex-direction: column;
+    width: 100%;
   }
   .imgarea {
     position: relative;
     transform: none;
-    margin-top: 32px;
+    margin-top: 24px;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
   .imgareaBox {
     width: 140px;
     height: 90px;
   }
+  .fontEn {
+    font-size: 2.5rem;
+  }
   .fontJp {
-    font-size: 22px;
-    letter-spacing: 4px;
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
   }
   .homeTxt {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 0.875rem;
+    line-height: 1.8;
     letter-spacing: 1.5px;
+    margin-bottom: 24px;
   }
   .btnWh a {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
     padding: 14px 32px;
     font-size: 0.875rem;
+    justify-content: center;
   }
 }

@@ -123,16 +123,19 @@
 
 @media screen and (max-width: 767px) {
   .homeAbout {
-    margin-bottom: 48px;
+    padding: 56px 0;
+    margin-bottom: 0;
   }
   .flex {
+    padding: 0 5%;
     flex-direction: column;
   }
   .imgarea {
     position: relative;
     width: 100%;
-    padding: 20px;
-    padding-bottom: 0;
+    padding: 0;
+    margin-top: 24px;
+    order: 2;
   }
   .aboutImg01 {
     padding-left: 0;
@@ -148,18 +151,23 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 32px 20px;
+    padding: 0;
+    background: none;
+    order: 1;
   }
   .homeTtl {
     margin-bottom: 24px;
   }
+  .fontEn {
+    font-size: 2.5rem;
+  }
   .fontJp {
-    font-size: 22px;
-    letter-spacing: 4px;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
   }
   .aboutTxt {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 0.875rem;
+    line-height: 2;
     letter-spacing: 1.5px;
     margin-bottom: 24px;
   }
