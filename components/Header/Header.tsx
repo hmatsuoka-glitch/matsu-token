@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -6,13 +5,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <h1 className={styles.headerLogo}>
-          <Link href="/">
+          <a href="#top">
             <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
               <text x="0" y="32" fontFamily="Sen, sans-serif" fontSize="24" fontWeight="700" fill="#3FB5EA">
                 MATSUTOKEN
               </text>
             </svg>
-          </Link>
+          </a>
         </h1>
 
         <div className={styles.telBtn}>
@@ -30,18 +29,18 @@ export default function Header() {
 
         <nav>
           <ul className={styles.gnav}>
-            <li><Link href="/">ホーム</Link></li>
-            <li><Link href="/feature/">まつ塗研の特徴</Link></li>
-            <li><Link href="/service/">事業内容</Link></li>
-            <li><Link href="/company/">会社概要</Link></li>
-            <li><Link href="/works/">施工実績</Link></li>
-            <li><Link href="/recruit/">採用情報</Link></li>
+            <li><a href="#top">ホーム</a></li>
+            <li><a href="#feature">まつ塗研の特徴</a></li>
+            <li><a href="#service">事業内容</a></li>
+            <li><a href="#about">会社概要</a></li>
+            <li><a href="#works">施工実績</a></li>
+            <li><a href="#recruit">採用情報</a></li>
           </ul>
         </nav>
 
         <div className={styles.ctaButtons}>
-          <a className={`${styles.ctaBtn} ${styles.ctaBtnGreen}`} href="/contact/">まずはお見積り</a>
-          <a className={`${styles.ctaBtn} ${styles.ctaBtnBlue}`} href="/personal/">個人のお客様はこちら</a>
+          <a className={`${styles.ctaBtn} ${styles.ctaBtnGreen}`} href="#contact">まずはお見積り</a>
+          <a className={`${styles.ctaBtn} ${styles.ctaBtnBlue}`} href="#contact">個人のお客様はこちら</a>
         </div>
       </div>
     </header>

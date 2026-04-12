@@ -9,7 +9,7 @@ const services = [
 
 export default function Service() {
   return (
-    <section className={styles.homeService}>
+    <section id="service" className={styles.homeService}>
       <div className={styles.serviceContent}>
         <div className={styles.cercleList}>
           <div className={styles.cercleTtlBox}>
@@ -35,7 +35,7 @@ export default function Service() {
             毎日見る景色に、美しい彩りと安心を。
           </p>
           <div className={styles.btn}>
-            <a href="/service/">事業内容一覧</a>
+            <a href="#contact">お問い合わせはこちら</a>
           </div>
         </div>
       </div>

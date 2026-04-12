@@ -19,7 +19,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className={styles.hero}>
+    <div id="top" className={styles.hero}>
       <div className={styles.heroSlide}>
         <ul className={styles.heroSlideBlur}>
           <li>
@@ -53,8 +53,8 @@ export default function Hero() {
           安心できる住まいづくりに貢献し続けます。
         </p>
         <div className={styles.ctaButtons}>
-          <a className={`${styles.ctaBtn} ${styles.ctaBtnGreen}`} href="/contact/">まずはお見積り</a>
-          <a className={`${styles.ctaBtn} ${styles.ctaBtnBlue}`} href="/personal/">個人のお客様はこちら</a>
+          <a className={`${styles.ctaBtn} ${styles.ctaBtnGreen}`} href="#contact">まずはお見積り</a>
+          <a className={`${styles.ctaBtn} ${styles.ctaBtnBlue}`} href="#contact">個人のお客様はこちら</a>
         </div>
       </div>
 

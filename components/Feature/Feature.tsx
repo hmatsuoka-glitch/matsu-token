@@ -30,7 +30,7 @@ const features = [
 
 export default function Feature() {
   return (
-    <section className={styles.homeFeature}>
+    <section id="feature" className={styles.homeFeature}>
       <p className={styles.homeTtlDeco}>OUR FEATURE</p>
       <div className={styles.inner}>
         <h2 className={`${styles.homeTtl} ${styles.homeTtlCtr}`}>
@@ -58,7 +58,7 @@ export default function Feature() {
             </li>
           ))}
           <li className={styles.featureBtn}>
-            <a href="/feature/">特徴をもっと詳しく見る</a>
+            <a href="#contact">お問い合わせはこちら</a>
           </li>
         </ul>
       </div>

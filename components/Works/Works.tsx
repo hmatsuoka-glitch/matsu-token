@@ -64,7 +64,7 @@ export default function Works() {
   const next = () => setIndex((i) => Math.min(maxIndex, i + 1));
 
   return (
-    <section className={styles.homeWorks}>
+    <section id="works" className={styles.homeWorks}>
       <p className={styles.homeTtlDeco}>MATSUTOKEN</p>
       <div className={styles.ttlarea}>
         <h2 className={styles.homeTtl}>
@@ -107,7 +107,7 @@ export default function Works() {
                   </div>
                   <p className={styles.postDate}>{work.year}</p>
                   <h3 className={styles.postTtl}>
-                    <a href="/works/">{work.title}</a>
+                    <a href="#works">{work.title}</a>
                   </h3>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Works() {
       </div>
 
       <div className={styles.btnWrap}>
-        <a href="/works/">施工実績一覧を見る</a>
+        <a href="#contact">お問い合わせはこちら</a>
       </div>
     </section>
   );

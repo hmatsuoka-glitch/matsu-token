@@ -2,7 +2,7 @@ import styles from './About.module.css';
 
 export default function About() {
   return (
-    <section className={styles.homeAbout}>
+    <section id="about" className={styles.homeAbout}>
       <div className={styles.flex}>
         <div className={styles.imgarea}>
           <div className={styles.aboutImg01}>
@@ -26,7 +26,7 @@ export default function About() {
             住まいの美しさと安心をこれからも長く守り続けます。
           </p>
           <div className={styles.btn}>
-            <a href="/company/">会社概要をみる</a>
+            <a href="#feature">まつ塗研の特徴をみる</a>
           </div>
         </div>
       </div>

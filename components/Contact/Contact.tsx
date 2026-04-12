@@ -2,7 +2,7 @@ import styles from './Contact.module.css';
 
 export default function Contact() {
   return (
-    <section className={styles.sectionContact}>
+    <section id="contact" className={styles.sectionContact}>
       <div className={styles.inner}>
         <h2 className={`${styles.homeTtl} ${styles.homeTtlCtr}`}>
           <span className={styles.fontEn}>CONTACT</span>
@@ -21,7 +21,7 @@ export default function Contact() {
           <p className={styles.contactTelLabel}>［受付時間］ 月〜金 9:00〜17:00</p>
         </div>
         <div>
-          <a className={styles.contactBtn} href="/contact/">まずはお見積り</a>
+          <a className={styles.contactBtn} href="tel:0854323181">お電話でのお問い合わせはこちら</a>
         </div>
       </div>
       <p className={styles.homeTtlDeco}>MATSUTOKEN</p>

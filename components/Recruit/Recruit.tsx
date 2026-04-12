@@ -2,7 +2,7 @@ import styles from './Recruit.module.css';
 
 export default function Recruit() {
   return (
-    <section className={styles.homeRecruit}>
+    <section id="recruit" className={styles.homeRecruit}>
       <div className={styles.inner}>
         <h2 className={styles.homeTtl}>
           <span className={styles.fontEn}>RECRUIT</span>
@@ -12,7 +12,7 @@ export default function Recruit() {
           わたしたちは個のちからを最大限に活かしたチーム戦を実践しています。未来の自分と、未来の暮らしをわたしたちと一緒につくりませんか？
         </p>
         <div className={styles.btnWh}>
-          <a href="/recruit/">採用情報を見る</a>
+          <a href="#contact">お問い合わせはこちら</a>
         </div>
       </div>
       <div className={styles.imgarea}>
