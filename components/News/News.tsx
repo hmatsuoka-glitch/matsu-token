@@ -1,9 +1,9 @@
 import styles from './News.module.css';
 
 const newsItems = [
-  { date: '2025.12.24', title: '年末年始のお知らせ' },
-  { date: '2025.07.23', title: '社員旅行に伴う臨時休業のお知らせ（2025/8/28-8/31）' },
-  { date: '2024.07.11', title: '施工事例を更新致しました。' },
+  { date: '2025.04.01', title: 'ホームページをリニューアルしました' },
+  { date: '2025.03.15', title: '春の塗装キャンペーン実施中' },
+  { date: '2024.12.01', title: '年末年始休業のお知らせ' },
 ];
 
 export default function News() {

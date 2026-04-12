@@ -1,14 +1,10 @@
 import styles from './Service.module.css';
 
 const services = [
-  { num: '01', text: '塗装・吹付け工事' },
-  { num: '02', text: '塗床工事' },
-  { num: '03', text: '防水工事' },
-  { num: '04', text: 'コーキング工事' },
-  { num: '05', text: '足場工事' },
-  { num: '06', text: '補修工事（アスベスト除去）' },
-  { num: '07', text: '左官工事' },
-  { num: '08', text: '板金工事' },
+  { num: '01', text: '外壁塗装' },
+  { num: '02', text: '屋根塗装' },
+  { num: '03', text: '内装塗装' },
+  { num: '04', text: '部分補修・鉄部塗装' },
 ];
 
 export default function Service() {
@@ -17,7 +13,7 @@ export default function Service() {
       <div className={styles.serviceContent}>
         <div className={styles.cercleList}>
           <div className={styles.cercleTtlBox}>
-            <h3 className={styles.cercleTtl}>8つの事業を中心に一括対応</h3>
+            <h3 className={styles.cercleTtl}>4つのサービスで住まいをトータルサポート</h3>
           </div>
           <ul>
             {services.map((s) => (
@@ -34,9 +30,9 @@ export default function Service() {
             <span className={styles.fontJp}>事業内容</span>
           </h2>
           <p className={styles.serviceText}>
-            建築物の新築や修繕工事全般を請け負っております。
-            8つの事業を中心に建物に関するあらゆる工事を一括でお任せいただけます。
-            耐候性を重視し、利用する人々の暮らしを豊かに、安心できる環境をご提供します。
+            まつ塗研は、丁寧な診断と誠実な提案でお客様の住まいに最適な塗装を届けます。
+            &quot;ただ塗る&quot;だけではなく、住まいを長く守るために最適な施工をご提案します。
+            毎日見る景色に、美しい彩りと安心を。
           </p>
           <div className={styles.btn}>
             <a href="/service/">事業内容一覧</a>

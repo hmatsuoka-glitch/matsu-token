@@ -9,7 +9,7 @@ export default function Recruit() {
           <span className={styles.fontJp}>採用情報</span>
         </h2>
         <p className={styles.homeTxt}>
-          2023年、新社屋誕生！私たちと一緒にユタカプラスで働きませんか？
+          わたしたちは個のちからを最大限に活かしたチーム戦を実践しています。未来の自分と、未来の暮らしをわたしたちと一緒につくりませんか？
         </p>
         <div className={styles.btnWh}>
           <a href="/recruit/">採用情報を見る</a>
