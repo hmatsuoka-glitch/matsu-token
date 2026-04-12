@@ -53,6 +53,7 @@
   align-items: center;
   height: 80px;
   font-family: var(--font-noto-sans-jp), var(--font-primary);
+  white-space: nowrap;
 }
 
 .gnav a:hover {
@@ -85,12 +86,14 @@
   letter-spacing: 0.54px;
   font-family: var(--font-en), var(--font-sen);
   display: block;
+  white-space: nowrap;
 }
 
 .telReception {
   font-size: 10px;
   color: #666;
   margin-left: 8px;
+  white-space: nowrap;
 }
 
 .ctaButtons {
@@ -111,6 +114,7 @@
   text-decoration: none;
   box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
 .ctaBtnGreen {
