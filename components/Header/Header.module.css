@@ -143,7 +143,34 @@
 
 @media screen and (max-width: 900px) {
   .gnav,
-  .telReception {
+  .telReception,
+  .ctaButtons {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+  .inner {
+    padding: 0 16px;
+  }
+  .headerLogo a {
+    height: 60px;
+  }
+  .headerLogo a svg,
+  .headerLogo a img {
+    height: 32px;
+  }
+  .telNumber {
+    font-size: 18px;
+  }
+  .telLabel {
+    font-size: 10px;
+  }
+  .telIcon {
+    width: 20px;
+    height: 20px;
   }
 }

@@ -186,9 +186,11 @@
   }
   .cercleList {
     min-width: auto;
+    width: 100%;
   }
   .cercleList ul {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
   .cercleList li {
     width: 130px;
@@ -198,6 +200,7 @@
     writing-mode: horizontal-tb;
     font-size: 22px;
     letter-spacing: 4px;
+    text-align: center;
   }
   .homeTtlDecoVertical {
     display: none;
@@ -205,5 +208,30 @@
   .fontJp {
     font-size: 22px;
     letter-spacing: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeService {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+  }
+  .cercleList li {
+    width: 120px;
+    height: 120px;
+  }
+  .cercleTxt {
+    font-size: 12px;
+  }
+  .homeTtlDeco {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 4px;
+  }
+  .serviceText {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
   }
 }

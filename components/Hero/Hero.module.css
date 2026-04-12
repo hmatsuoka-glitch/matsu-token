@@ -144,18 +144,42 @@
 
 @media screen and (max-width: 767px) {
   .hero {
-    height: 600px;
+    height: auto;
+    min-height: 560px;
+    margin-bottom: 40px;
   }
   .heroTitle {
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 4px;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+  .heroText {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    margin-top: 16px;
   }
   .heroSlide {
     width: 100%;
+    height: 100%;
   }
   .heroCatch {
-    left: 20px;
-    bottom: 40px;
+    left: 16px;
+    right: 16px;
+    bottom: 32px;
+    max-width: none;
+  }
+  .ctaButtons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .ctaBtn {
+    padding: 14px 24px;
+    font-size: 0.875rem;
+    justify-content: center;
+  }
+  .scrollIndicator {
+    display: none;
   }
 }

@@ -99,6 +99,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .inner {
+    padding: 48px 20px;
+  }
   .imgarea {
     position: relative;
     transform: none;
@@ -113,5 +116,14 @@
   .fontJp {
     font-size: 22px;
     letter-spacing: 4px;
+  }
+  .homeTxt {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+  }
+  .btnWh a {
+    padding: 14px 32px;
+    font-size: 0.875rem;
   }
 }

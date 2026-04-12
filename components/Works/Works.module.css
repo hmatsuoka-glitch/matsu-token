@@ -224,6 +224,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .homeWorks {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .worksSlideItem {
     flex: 0 0 100%;
   }
@@ -231,12 +235,31 @@
     width: 90%;
   }
   .homeTtlDeco {
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: 4px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    top: 0;
   }
   .fontJp {
     font-size: 22px;
     letter-spacing: 4px;
+  }
+  .controlBtn {
+    width: 44px;
+    height: 44px;
+  }
+  .worksSlideControl {
+    gap: 12px;
+  }
+  .postImg {
+    height: 220px;
+  }
+  .postInfo > p {
+    font-size: 0.8em;
+    min-width: 6em;
+  }
+  .btnWrap a {
+    padding: 14px 32px;
+    font-size: 0.875rem;
   }
 }
