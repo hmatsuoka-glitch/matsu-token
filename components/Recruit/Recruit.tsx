@@ -1,0 +1,24 @@
+import styles from './Recruit.module.css';
+
+export default function Recruit() {
+  return (
+    <section className={styles.homeRecruit}>
+      <div className={styles.inner}>
+        <h2 className={styles.homeTtl}>
+          <span className={styles.fontEn}>RECRUIT</span>
+          <span className={styles.fontJp}>採用情報</span>
+        </h2>
+        <p className={styles.homeTxt}>
+          2023年、新社屋誕生！私たちと一緒にユタカプラスで働きませんか？
+        </p>
+        <div className={styles.btnWh}>
+          <a href="/recruit/">採用情報を見る</a>
+        </div>
+      </div>
+      <div className={styles.imgarea}>
+        <div className={`${styles.imgareaBox} placeholder`}>RECRUIT IMAGE 1</div>
+        <div className={`${styles.imgareaBox} placeholder`}>RECRUIT IMAGE 2</div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,117 @@
+.homeRecruit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--clr-wht);
+  background-image: linear-gradient(135deg, #101560, #3FB5EA);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media print, screen and (min-width: 48em) {
+  .homeRecruit {
+    aspect-ratio: 1920 / 600;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.homeTtl {
+  margin-bottom: 40px;
+}
+
+.fontEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: var(--clr-wht);
+  margin-bottom: 8px;
+}
+
+.fontJp {
+  display: block;
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 8.16px;
+  color: var(--clr-wht);
+}
+
+.homeTxt {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 2.88px;
+  color: var(--clr-wht);
+  margin-bottom: 32px;
+}
+
+.btnWh a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--clr-wht);
+  border: 1px solid var(--clr-wht);
+  border-radius: 50vw;
+  padding: 16px 48px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btnWh a:hover {
+  background: var(--clr-wht);
+  color: var(--clr-body);
+}
+
+.imgarea {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  gap: 20px;
+}
+
+@media print, screen and (min-width: 48em) {
+  .imgarea {
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+  }
+}
+
+.imgareaBox {
+  width: 320px;
+  height: 180px;
+  box-shadow: rgba(84, 157, 156, 0.2) 0px -5px 30px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .imgarea {
+    position: relative;
+    transform: none;
+    margin-top: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .imgareaBox {
+    width: 140px;
+    height: 90px;
+  }
+  .fontJp {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+}

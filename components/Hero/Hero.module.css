@@ -1,0 +1,161 @@
+.hero {
+  position: relative;
+  height: 800px;
+  margin-bottom: 80px;
+}
+
+.heroCatch {
+  position: absolute;
+  bottom: 60px;
+  left: 5.20833vw;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.heroSlide {
+  position: absolute;
+  width: 80.2083vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.heroSlideBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroSlideBlur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 181, 234, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 8;
+}
+
+.heroSlidePc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.08333vw;
+  z-index: 9;
+}
+
+.heroSlideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroTitle {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 17px;
+  color: #000;
+  font-family: var(--font-noto-sans-jp), var(--font-jp);
+}
+
+.heroText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 2.88px;
+  color: #000;
+  margin-top: 24px;
+  font-family: var(--font-primary);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border-radius: 50vw;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
+  transition: opacity 0.3s ease;
+}
+
+.ctaBtnGreen {
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+}
+
+.ctaBtnBlue {
+  background: linear-gradient(315deg, #0CCFA8 0%, #4CC6D8 100%);
+}
+
+.ctaBtn:hover {
+  opacity: 0.8;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 0;
+  right: 5.20833vw;
+  z-index: 10;
+  writing-mode: vertical-rl;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scrollLine {
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: #fff;
+  margin-top: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollLine::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-lgr);
+  animation: scroll 2s ease infinite;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 600px;
+  }
+  .heroTitle {
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 4px;
+  }
+  .heroSlide {
+    width: 100%;
+  }
+  .heroCatch {
+    left: 20px;
+    bottom: 40px;
+  }
+}

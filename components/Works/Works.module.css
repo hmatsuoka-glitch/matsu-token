@@ -1,0 +1,242 @@
+.homeWorks {
+  padding-bottom: 5.20833vw;
+  padding-top: 5.20833vw;
+  position: relative;
+}
+
+.ttlarea {
+  position: relative;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.homeTtl {
+  margin-bottom: 40px;
+}
+
+.fontEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: var(--clr-main);
+  margin-bottom: 8px;
+}
+
+.fontJp {
+  display: block;
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 8.16px;
+  color: #000;
+}
+
+.worksSlideControl {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 18px;
+  z-index: 10;
+}
+
+.controlBtn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--clr-lgr);
+  border-radius: 50vw;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  background: transparent;
+}
+
+.controlBtn:hover {
+  opacity: 0.6;
+}
+
+.arrow {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 18px;
+  height: 2px;
+  background-color: var(--clr-lgr);
+  scale: 0.75;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid var(--clr-lgr);
+  border-right: 2px solid var(--clr-lgr);
+  transform: rotate(45deg);
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+  scale: 0.75;
+}
+
+.homeTtlDeco {
+  font-family: var(--font-en2), var(--font-albert-sans);
+  font-size: 157.5px;
+  font-weight: 500;
+  line-height: 110.25px;
+  letter-spacing: 15.75px;
+  color: var(--clr-main);
+  opacity: 0.1;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 0;
+  top: 20px;
+  left: 0;
+}
+
+.worksSlide {
+  position: relative;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.slideTrack {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.worksSlideItem {
+  padding: 0 15px;
+  flex: 0 0 33.333%;
+  min-width: 0;
+}
+
+.post {
+  position: relative;
+  height: 100%;
+}
+
+.postImg {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.postImgBox {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.post:hover .postImgBox {
+  transform: scale(1.1);
+}
+
+.postTxtarea {
+  padding: 1.5em 1em;
+  background-color: var(--clr-wht);
+}
+
+.postInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.postInfo > p {
+  margin-bottom: 8px;
+  min-width: 8em;
+  font-size: 0.9em;
+  flex-shrink: 0;
+}
+
+.postInfoTag {
+  background-color: var(--clr-lgr);
+  color: #fff;
+  padding: 3px 1.5em;
+  font-size: 0.875rem;
+  border-radius: 50vw;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.postInfoTagArea {
+  background-color: #fff;
+  color: var(--clr-main);
+  border: 1px solid var(--clr-main);
+}
+
+.postDate {
+  color: var(--clr-blk);
+  font-family: var(--font-primary), var(--font-sen);
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.postTtl a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 1.6px;
+  color: #000;
+  margin-top: 8px;
+}
+
+.btnWrap {
+  width: 75%;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.btnWrap a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 48px;
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+  color: #fff;
+  border-radius: 50vw;
+  font-weight: 600;
+  box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
+  transition: opacity 0.3s ease;
+}
+
+.btnWrap a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .worksSlideItem {
+    flex: 0 0 100%;
+  }
+  .ttlarea, .worksSlide, .btnWrap {
+    width: 90%;
+  }
+  .homeTtlDeco {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 4px;
+  }
+  .fontJp {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+}

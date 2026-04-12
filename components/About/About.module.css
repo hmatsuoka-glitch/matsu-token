@@ -1,0 +1,146 @@
+.homeAbout {
+  margin-bottom: 2.5vw;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgarea {
+  position: absolute;
+  left: 0;
+  width: 50vw;
+  padding-left: 7.08333vw;
+  padding-bottom: 24.5833vw;
+  z-index: 99;
+}
+
+.aboutImg01 {
+  position: relative;
+  z-index: 2;
+  padding-left: 16%;
+}
+
+.aboutImg01Box {
+  width: 649px;
+  max-width: 100%;
+  height: 433px;
+  background-color: #ccc;
+}
+
+.aboutImg02 {
+  position: absolute;
+  left: 0;
+  bottom: 8.125vw;
+  width: 16.7188vw;
+  height: 23.75vw;
+  z-index: 1;
+  background-color: #bbb;
+}
+
+.aboutImg03 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 19.8958vw;
+  height: 20.6875vw;
+  z-index: 1;
+  background-color: #bbb;
+}
+
+.txtarea {
+  width: 54.1667vw;
+  margin-top: 5.46875vw;
+  padding-top: 6.35417vw;
+  padding-bottom: 4.16667vw;
+  padding-left: 6.77083vw;
+  padding-right: 4vw;
+  margin-bottom: 6.66667vw;
+  background-color: var(--clr-wht);
+  background-image: linear-gradient(135deg, #e7faf7 0%, #ffffff 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+
+.homeTtl {
+  margin-bottom: 40px;
+}
+
+.fontEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: var(--clr-main);
+  margin-bottom: 8px;
+}
+
+.fontJp {
+  display: block;
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 8.16px;
+  color: #000;
+}
+
+.aboutTxt {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 2.88px;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.btn {
+  margin-top: 32px;
+}
+
+.btn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 48px;
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+  color: #fff;
+  border-radius: 50vw;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+  box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
+}
+
+.btn a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .imgarea {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+  }
+  .aboutImg01Box {
+    width: 100%;
+    height: 240px;
+  }
+  .aboutImg02, .aboutImg03 {
+    display: none;
+  }
+  .txtarea {
+    width: 100%;
+    margin-top: 0;
+    padding: 40px 20px;
+  }
+  .fontJp {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+}

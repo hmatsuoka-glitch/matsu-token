@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+  background-color: var(--clr-wht);
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+}
+
+.headerLogo {
+  margin: 0;
+}
+
+.headerLogo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.headerLogo a svg,
+.headerLogo a img {
+  height: 48px;
+  width: auto;
+}
+
+.gnav {
+  display: flex;
+  gap: 0 48px;
+}
+
+.gnav > li {
+  list-style: none;
+}
+
+.gnav a {
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--clr-body);
+  display: flex;
+  align-items: center;
+  height: 80px;
+  font-family: var(--font-noto-sans-jp), var(--font-primary);
+}
+
+.gnav a:hover {
+  color: var(--clr-main);
+}
+
+.telBtn a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--clr-lgr);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.telIcon {
+  width: 24px;
+  height: 24px;
+  fill: var(--clr-lgr);
+}
+
+.telLabel {
+  font-size: 12px;
+  display: block;
+}
+
+.telNumber {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.54px;
+  font-family: var(--font-en), var(--font-sen);
+  display: block;
+}
+
+.telReception {
+  font-size: 10px;
+  color: #666;
+  margin-left: 8px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+  border-radius: 0 0 20px 20px;
+  color: var(--clr-wht);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
+  transition: opacity 0.3s ease;
+}
+
+.ctaBtnGreen {
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+}
+
+.ctaBtnBlue {
+  background: linear-gradient(315deg, #0CCFA8 0%, #4CC6D8 100%);
+}
+
+.ctaBtn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px) {
+  .gnav {
+    gap: 0 24px;
+  }
+  .gnav a {
+    font-size: 0.875rem;
+  }
+  .telReception {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gnav,
+  .telReception {
+    display: none;
+  }
+}
