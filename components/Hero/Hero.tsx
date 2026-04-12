@@ -42,15 +42,15 @@ export default function Hero() {
       </div>
 
       <div className={styles.heroCatch}>
-        <h2 className={styles.heroTitle}>明日も10年先も、<br />変わらない価値をつくる。</h2>
+        <h2 className={styles.heroTitle}>創業40年以上の確かな技術で、<br />あなたの住まいをもっと美しく。</h2>
         <p className={styles.heroText}>
-          塗装の仕事は、施してからが本当のはじまりです。
+          確かな塗装技術で、地域の暮らしを守り続ける。
           <br />
-          明日も、5年後も、10年後も変わらぬ価値を
+          この街の住まいを守ることは、そこで暮らす人の未来を守ること。
           <br />
-          建物や公共施設に付帯するのが私たちの使命。
+          まつ塗研は、地域に根ざした技術と責任で
           <br />
-          柔軟な対応力で、愛知の街の未来をつくります。
+          安心できる住まいづくりに貢献し続けます。
         </p>
         <div className={styles.ctaButtons}>
           <a className={`${styles.ctaBtn} ${styles.ctaBtnGreen}`} href="/contact/">まずはお見積り</a>

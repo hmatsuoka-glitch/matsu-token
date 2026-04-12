@@ -12,46 +12,46 @@ interface Work {
 
 const works: Work[] = [
   {
-    year: '2025年',
-    title: '西区 Mマンション 外部改修工事',
+    year: '施工実績',
+    title: '戸建住宅 外壁・屋根塗装工事',
+    buildingType: '一般住宅',
+    workType: '外壁塗装・屋根塗装',
+    area: '安来市',
+  },
+  {
+    year: '施工実績',
+    title: 'アパート外壁塗装工事',
     buildingType: '集合住宅',
-    workType: '補修工事・足場工事・コーキング工事・防水工事・塗装・吹付け工事・その他',
-    area: '名古屋市',
+    workType: '外壁塗装',
+    area: '安来市',
   },
   {
-    year: '2025年',
-    title: '東海市 倉庫 塗床工事',
-    buildingType: '社屋・工場',
-    workType: '塗床工事',
-    area: '愛知県（名古屋市以外）',
+    year: '施工実績',
+    title: '戸建住宅 屋根塗装工事',
+    buildingType: '一般住宅',
+    workType: '屋根塗装',
+    area: '安来市広瀬町',
   },
   {
-    year: '2025年',
-    title: '常滑市 アパート駐車場 ライン引き工事',
-    buildingType: '集合住宅',
-    workType: 'その他',
-    area: '愛知県（名古屋市以外）',
+    year: '施工実績',
+    title: '倉庫 鉄骨塗装工事',
+    buildingType: 'その他',
+    workType: '鉄部塗装',
+    area: '安来市',
   },
   {
-    year: '2025年',
-    title: '中区 オフィス タイル調特殊塗装工事',
-    buildingType: 'オフィス',
-    workType: 'その他',
-    area: '名古屋市',
+    year: '施工実績',
+    title: '店舗 内装塗装工事',
+    buildingType: '店舗',
+    workType: '内装塗装',
+    area: '安来市',
   },
   {
-    year: '2024年',
-    title: '碧南市 H高校 校舎改修工事',
-    buildingType: '学校',
-    workType: 'その他',
-    area: '愛知県（名古屋市以外）',
-  },
-  {
-    year: '2026年',
-    title: '東海市 駐車場白線工事',
-    buildingType: '店舗集合住宅',
-    workType: 'その他',
-    area: '愛知県（名古屋市以外）',
+    year: '施工実績',
+    title: '戸建住宅 外壁・防水工事',
+    buildingType: '一般住宅',
+    workType: '外壁塗装・防水工事',
+    area: '松江市',
   },
 ];
 
@@ -65,7 +65,7 @@ export default function Works() {
 
   return (
     <section className={styles.homeWorks}>
-      <p className={styles.homeTtlDeco}>YUTAKA PLUS</p>
+      <p className={styles.homeTtlDeco}>MATSUTOKEN</p>
       <div className={styles.ttlarea}>
         <h2 className={styles.homeTtl}>
           <span className={styles.fontEn}>WORKS</span>
