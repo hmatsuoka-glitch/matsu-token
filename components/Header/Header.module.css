@@ -4,40 +4,67 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 999;
-  background-color: var(--clr-wht);
+  background-color: #fff;
 }
 
-.inner {
-  position: relative;
+.headerInner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 24px;
+  max-width: 100%;
+  padding: 0 24px 0 16px;
+  gap: 24px;
 }
 
 .headerLogo {
   margin: 0;
+  flex-shrink: 0;
 }
 
 .headerLogo a {
-  display: flex;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logoBox {
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 16px;
+  box-shadow: rgba(84, 157, 156, 0.2) 0px 4px 16px;
   height: 80px;
 }
 
-.headerLogo a svg,
-.headerLogo a img {
-  height: 48px;
-  width: auto;
+.logoSvg {
+  width: 56px;
+  height: 56px;
+}
+
+.logoText {
+  font-family: var(--font-en), "Sen", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #98C6DB;
+  margin-top: 2px;
+}
+
+.gnavWrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .gnav {
   display: flex;
-  gap: 0 48px;
+  gap: 0 32px;
+  list-style: none;
 }
 
 .gnav > li {
@@ -45,72 +72,94 @@
 }
 
 .gnav a {
-  font-size: 1rem;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1;
+  letter-spacing: 1.6px;
+  color: #000;
   text-decoration: none;
-  color: var(--clr-body);
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 100px;
   font-family: var(--font-noto-sans-jp), var(--font-primary);
+  transition: color 0.3s ease;
 }
 
 .gnav a:hover {
   color: var(--clr-main);
 }
 
-.telBtn a {
+.telArea {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
   align-items: center;
-  color: var(--clr-lgr);
-  text-decoration: none;
-  font-weight: 700;
+  flex-shrink: 0;
 }
 
-.telIcon {
-  width: 24px;
-  height: 24px;
-  fill: var(--clr-lgr);
+.telLink {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  text-decoration: none;
 }
 
 .telLabel {
-  font-size: 12px;
-  display: block;
+  font-family: var(--font-en), "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--clr-lgr);
+  line-height: 1;
 }
 
 .telNumber {
+  font-family: var(--font-en), "Sen", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.54px;
-  font-family: var(--font-en), var(--font-sen);
-  display: block;
+  color: var(--clr-lgr);
+  line-height: 1;
 }
 
-.telReception {
-  font-size: 10px;
+.telSub {
+  font-size: 12px;
   color: #666;
-  margin-left: 8px;
+  margin-top: 4px;
+  line-height: 1;
 }
 
 .ctaButtons {
   display: flex;
-  gap: 12px;
+  gap: 8px;
+  align-self: flex-start;
+  flex-shrink: 0;
 }
 
 .ctaBtn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 32px;
+  padding: 16px 32px;
   border-radius: 0 0 20px 20px;
-  color: var(--clr-wht);
+  color: #fff;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1;
   text-decoration: none;
   box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
+  height: auto;
+  position: relative;
+  top: 0;
   transition: opacity 0.3s ease;
+}
+
+.ctaBtn:hover {
+  opacity: 0.85;
+}
+
+.ctaIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .ctaBtnGreen {
@@ -121,25 +170,44 @@
   background: linear-gradient(315deg, #0CCFA8 0%, #4CC6D8 100%);
 }
 
-.ctaBtn:hover {
-  opacity: 0.8;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .gnav {
-    gap: 0 24px;
+    gap: 0 18px;
   }
   .gnav a {
-    font-size: 0.875rem;
+    font-size: 13px;
+    letter-spacing: 1px;
   }
-  .telReception {
+  .ctaBtn {
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+  .telNumber {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .gnav,
+  .telSub {
     display: none;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .gnav,
-  .telReception {
+@media screen and (max-width: 767px) {
+  .header {
+    height: 80px;
+  }
+  .logoBox {
+    height: 64px;
+    padding: 4px 8px;
+  }
+  .logoSvg {
+    width: 40px;
+    height: 40px;
+  }
+  .telArea,
+  .ctaButtons {
     display: none;
   }
 }

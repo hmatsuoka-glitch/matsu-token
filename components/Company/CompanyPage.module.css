@@ -1,0 +1,145 @@
+.visionSection,
+.messageSection,
+.companyInfoSection,
+.qualificationsSection,
+.historySection,
+.sdgsSection {
+  padding: 80px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.visionSection {
+  text-align: center;
+}
+
+.ttlWrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fontEn {
+  display: block;
+  font-family: var(--font-en), "Sen", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: var(--clr-main);
+  margin-bottom: 8px;
+}
+
+.fontJp {
+  display: block;
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 8.16px;
+  color: #000;
+  margin: 0;
+}
+
+.visionText {
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.messageBody {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.messageImg {
+  width: 320px;
+  aspect-ratio: 4 / 5;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.messageText {
+  flex: 1;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.messageName {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.companyTable {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.companyTable th {
+  background: var(--clr-br4);
+  padding: 16px 24px;
+  text-align: left;
+  font-weight: 700;
+  width: 200px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.companyTable td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.qualList,
+.sdgsList {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.qualList li,
+.sdgsList li {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.qualList li::before,
+.sdgsList li::before {
+  content: "・";
+  color: var(--clr-main);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.qualificationsSection,
+.historySection {
+  background: linear-gradient(315deg, rgba(12, 207, 168, 0.03) 0%, rgba(76, 198, 216, 0.03) 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .messageBody {
+    flex-direction: column;
+  }
+  .messageImg {
+    width: 100%;
+  }
+  .fontJp {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+  .visionText {
+    font-size: 16px;
+  }
+  .companyTable th {
+    width: 120px;
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+  .companyTable td {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}

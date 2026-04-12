@@ -1,0 +1,197 @@
+.ttlWrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fontEn {
+  display: block;
+  font-family: var(--font-en), "Sen", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: var(--clr-main);
+  margin-bottom: 8px;
+}
+
+.fontJp {
+  display: block;
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 8.16px;
+  color: #000;
+  margin: 0;
+}
+
+.recruitMessage {
+  padding: 80px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recruitMessage h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.recruitMessage p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.aboutSection {
+  padding: 80px 0;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.aboutCard {
+  padding: 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(84, 157, 156, 0.1) 0px 4px 20px;
+}
+
+.aboutTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--clr-main);
+  margin-bottom: 12px;
+}
+
+.interviewSection {
+  padding: 80px 0;
+  background: linear-gradient(315deg, rgba(12, 207, 168, 0.05) 0%, rgba(76, 198, 216, 0.05) 100%);
+}
+
+.interviewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.interviewCard {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+}
+
+.interviewImg {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.interviewBody {
+  padding: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+.interviewName {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.interviewYear {
+  font-size: 14px;
+  color: var(--clr-main);
+  margin-bottom: 12px;
+}
+
+.requirementsSection {
+  padding: 80px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.requirementBlock {
+  margin-bottom: 48px;
+}
+
+.requirementTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--clr-main);
+}
+
+.requirementTable {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.requirementTable th {
+  background: var(--clr-br4);
+  padding: 16px 24px;
+  text-align: left;
+  font-weight: 700;
+  width: 200px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.requirementTable td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.8;
+}
+
+.contactNote {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .interviewGrid {
+    grid-template-columns: 1fr;
+  }
+  .fontJp {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+  .interviewCard {
+    flex-direction: column;
+  }
+  .interviewImg {
+    width: 100%;
+    height: 200px;
+  }
+  .requirementTable th {
+    width: 120px;
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+  .requirementTable td {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}

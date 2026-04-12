@@ -1,0 +1,71 @@
+.pageHeader {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgba(215, 240, 238, 0.5) 0%, rgba(152, 198, 219, 0.3) 100%);
+  overflow: hidden;
+}
+
+.pageHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, rgba(76, 198, 216, 0.2) 0%, rgba(12, 207, 168, 0.2) 100%);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.pageHeaderInner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.pageHeaderEn {
+  font-family: var(--font-en), "Sen", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--clr-main);
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.pageHeaderTitle {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 8.16px;
+  color: #000;
+  margin: 0;
+}
+
+.breadcrumb {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: var(--clr-main);
+  text-decoration: none;
+}
+
+.breadcrumbSep {
+  margin: 0 8px;
+  color: #666;
+}
+
+@media screen and (max-width: 767px) {
+  .pageHeader {
+    height: 240px;
+  }
+  .pageHeaderTitle {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+}

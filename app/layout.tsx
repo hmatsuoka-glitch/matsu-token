@@ -1,27 +1,5 @@
 import type { Metadata } from 'next';
-import { Noto_Sans_JP, Sen, Albert_Sans } from 'next/font/google';
 import './globals.css';
-
-const notoSansJP = Noto_Sans_JP({
-  subsets: ['latin'],
-  weight: ['400', '500', '700', '900'],
-  display: 'swap',
-  variable: '--font-noto-sans-jp',
-});
-
-const sen = Sen({
-  subsets: ['latin'],
-  weight: ['400', '700', '800'],
-  display: 'swap',
-  variable: '--font-sen',
-});
-
-const albertSans = Albert_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-  variable: '--font-albert-sans',
-});
 
 export const metadata: Metadata = {
   title: '名古屋市の外壁塗装・修繕工事なら㈱ユタカプラス',
@@ -34,7 +12,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={`${notoSansJP.variable} ${sen.variable} ${albertSans.variable}`}>
+    <html lang="ja">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Sen:wght@400;700;800&family=Albert+Sans:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

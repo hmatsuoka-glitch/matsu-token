@@ -1,0 +1,129 @@
+.filterSection {
+  padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filterGroup {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filterLabel {
+  font-weight: 700;
+  margin-right: 16px;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.filterTag {
+  display: inline-block;
+  padding: 6px 16px;
+  margin: 4px;
+  border: 1px solid #ddd;
+  border-radius: 50vw;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.filterTag:hover,
+.filterTag.active {
+  background: var(--clr-lgr);
+  color: #fff;
+  border-color: var(--clr-lgr);
+}
+
+.worksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.workCard {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(84, 157, 156, 0.1) 0px 4px 20px;
+  transition: transform 0.3s ease;
+}
+
+.workCard:hover {
+  transform: translateY(-4px);
+}
+
+.workCardImg {
+  height: 300px;
+  overflow: hidden;
+}
+
+.workCardBody {
+  padding: 24px;
+}
+
+.workCardDate {
+  font-family: var(--font-en), "Sen", sans-serif;
+  font-weight: 700;
+  color: var(--clr-main);
+  margin-bottom: 8px;
+}
+
+.workCardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.workCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.workCardTag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--clr-lgr);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50vw;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 40px 0 80px;
+}
+
+.pageNum {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.pageNum.active {
+  background: var(--clr-lgr);
+  color: #fff;
+  border-color: var(--clr-lgr);
+}
+
+@media screen and (max-width: 767px) {
+  .worksGrid {
+    grid-template-columns: 1fr;
+  }
+}
