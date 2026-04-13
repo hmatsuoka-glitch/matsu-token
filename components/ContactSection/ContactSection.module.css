@@ -1,0 +1,114 @@
+.sectionContact {
+  background: linear-gradient(315deg, rgba(12, 207, 168, 0.1) 0%, rgba(76, 198, 216, 0.1) 100%);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.titleEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen), 'Sen', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: var(--clr-main, #3FB5EA);
+  margin-bottom: 8px;
+}
+
+.titleJp {
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 8.16px;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 2.88px;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.tel {
+  margin-bottom: 32px;
+}
+
+.telLabel {
+  font-family: var(--font-en), var(--font-sen);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--clr-main, #3FB5EA);
+  margin-right: 4px;
+}
+
+.telNum {
+  font-family: var(--font-en), var(--font-sen);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr-lgr, #0CCFA8);
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 48px;
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+  color: #fff;
+  border-radius: 50vw;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: rgba(63, 181, 234, 0.27) 0px 0px 16px 0px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.homeTtlDeco {
+  font-family: var(--font-en2), var(--font-albert-sans);
+  font-size: 157.5px;
+  font-weight: 500;
+  line-height: 110.25px;
+  letter-spacing: 15.75px;
+  color: var(--clr-main, #3FB5EA);
+  opacity: 0.1;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .titleJp {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+  .homeTtlDeco {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .telNum {
+    font-size: 24px;
+  }
+}

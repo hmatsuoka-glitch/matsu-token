@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -5,13 +6,13 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
         <div className={styles.footerCompany}>
-          <a href="#top" className={styles.footerLogo}>
+          <Link href="/" className={styles.footerLogo}>
             <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
               <text x="0" y="32" fontFamily="Sen, sans-serif" fontSize="24" fontWeight="700" fill="#ffffff">
                 MATSUTOKEN
               </text>
             </svg>
-          </a>
+          </Link>
           <div className={styles.footerInfo}>
             <p>まつ塗研</p>
             <p>〒692-0402 島根県安来市広瀬町町帳94-2</p>
@@ -25,14 +26,14 @@ export default function Footer() {
         </div>
         <nav className={styles.fnav}>
           <ul className={styles.fnavMenu}>
-            <li><a href="#top">ホーム</a></li>
-            <li><a href="#feature">まつ塗研の特徴</a></li>
-            <li><a href="#service">事業内容</a></li>
-            <li><a href="#about">会社概要</a></li>
-            <li><a href="#works">施工実績</a></li>
-            <li><a href="#recruit">採用情報</a></li>
-            <li><a href="#news">新着情報</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
+            <li><Link href="/">ホーム</Link></li>
+            <li><Link href="/feature/">まつ塗研の特徴</Link></li>
+            <li><Link href="/service/">事業内容</Link></li>
+            <li><Link href="/company/">会社概要</Link></li>
+            <li><Link href="/works/">施工実績</Link></li>
+            <li><Link href="/recruit/">採用情報</Link></li>
+            <li><a href="/#news">新着情報</a></li>
+            <li><Link href="/contact/">お問い合わせ</Link></li>
           </ul>
         </nav>
       </div>

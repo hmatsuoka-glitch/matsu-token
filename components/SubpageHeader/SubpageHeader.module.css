@@ -1,0 +1,59 @@
+.subpageHeader {
+  background: linear-gradient(315deg, rgba(76, 198, 216, 0.08) 0%, rgba(12, 207, 168, 0.08) 100%);
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.titleEn {
+  font-family: var(--font-en), var(--font-sen), 'Sen', 'Albert Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--clr-main, #3FB5EA);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.titleJp {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #333;
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  padding: 0 5%;
+  font-size: 0.75rem;
+  color: #999;
+  text-align: left;
+}
+
+.breadcrumb a {
+  color: var(--clr-main, #3FB5EA);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .subpageHeader {
+    padding: 60px 0 32px;
+  }
+  .titleJp {
+    font-size: 1.5rem;
+  }
+}
