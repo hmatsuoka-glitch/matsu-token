@@ -1,0 +1,238 @@
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.sectionEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen), 'Sen', sans-serif;
+  font-size: 0.75rem;
+  color: var(--clr-main, #3FB5EA);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+
+.vision {
+  padding: 80px 0;
+  text-align: center;
+}
+.visionEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen), 'Sen', sans-serif;
+  font-size: 0.75rem;
+  color: var(--clr-main, #3FB5EA);
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+.visionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  color: #333;
+}
+.visionText {
+  font-size: 1rem;
+  line-height: 2;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message {
+  padding: 80px 0;
+  background: #f8fafa;
+}
+.messageContent {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+.messageImg {
+  flex: 0 0 300px;
+}
+.messageText {
+  flex: 1;
+}
+.messageText p {
+  font-size: 1rem;
+  line-height: 2;
+  color: #555;
+  margin-bottom: 16px;
+}
+.messageName {
+  margin-top: 24px;
+  font-size: 1rem;
+  color: #333;
+}
+.messageName strong {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 4px;
+}
+
+.staff {
+  padding: 80px 0;
+}
+.staffGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.staffCard {
+  text-align: center;
+}
+.staffImg {
+  margin-bottom: 16px;
+}
+.staffCard h3 {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+.staffCard h3 span {
+  font-size: 0.75rem;
+  color: #999;
+  margin-left: 4px;
+}
+.staffRole {
+  font-size: 0.8125rem;
+  color: var(--clr-main, #3FB5EA);
+  margin-bottom: 8px;
+}
+.staffCard p:last-child {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.companyInfo {
+  padding: 80px 0;
+  background: #f8fafa;
+}
+.companyTable {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.companyTable th,
+.companyTable td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 1rem;
+}
+.companyTable th {
+  width: 200px;
+  font-weight: 600;
+  color: #333;
+  background: rgba(63, 181, 234, 0.05);
+}
+.companyTable td {
+  color: #555;
+}
+
+.history {
+  padding: 80px 0;
+}
+.historyList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.historyItem {
+  display: flex;
+  gap: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.historyItem dt {
+  flex: 0 0 120px;
+  font-weight: 700;
+  color: var(--clr-main, #3FB5EA);
+  font-size: 1.125rem;
+}
+.historyItem dd {
+  flex: 1;
+  font-size: 1rem;
+  color: #555;
+}
+
+.policy {
+  padding: 80px 0;
+  background: #f8fafa;
+}
+.policyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.policyItem {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.policyItem h3 {
+  font-size: 1.125rem;
+  color: var(--clr-main, #3FB5EA);
+  margin-bottom: 8px;
+}
+.policyItem p {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.imgPlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #e8f4f8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+@media screen and (max-width: 767px) {
+  .messageContent {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .messageImg {
+    flex: none;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .staffGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .companyTable th {
+    width: auto;
+    display: block;
+  }
+  .companyTable td {
+    display: block;
+  }
+  .historyItem {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .policyGrid {
+    grid-template-columns: 1fr;
+  }
+  .visionTitle {
+    font-size: 1.25rem;
+  }
+}

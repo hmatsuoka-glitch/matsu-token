@@ -1,0 +1,179 @@
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.sectionEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen), 'Sen', sans-serif;
+  font-size: 0.75rem;
+  color: var(--clr-main, #3FB5EA);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+
+.recruitMessage {
+  padding: 80px 0;
+  text-align: center;
+}
+.messageEn {
+  display: block;
+  font-family: var(--font-en), var(--font-sen), 'Sen', sans-serif;
+  font-size: 0.75rem;
+  color: var(--clr-main, #3FB5EA);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+.messageTitle {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+.messageText {
+  font-size: 1rem;
+  line-height: 2;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.aboutCompany {
+  padding: 80px 0;
+  background: #f8fafa;
+}
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.aboutCard {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.cardIcon {
+  margin-bottom: 16px;
+}
+.iconPlaceholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(315deg, #4CC6D8, #0CCFA8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto;
+}
+.aboutCard h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+.aboutCard p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.interview {
+  padding: 80px 0;
+}
+.interviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.interviewCard {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.interviewImg {
+  flex: 0 0 200px;
+}
+.imgPlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #e8f4f8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+.interviewBody {
+  flex: 1;
+}
+.interviewBody h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #333;
+}
+.interviewBody p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.requirements {
+  padding: 80px 0;
+  background: #f8fafa;
+}
+.reqTable {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reqTable th,
+.reqTable td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 1rem;
+}
+.reqTable th {
+  width: 160px;
+  font-weight: 600;
+  color: #333;
+  background: rgba(63, 181, 234, 0.05);
+}
+.reqTable td {
+  color: #555;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .interviewCard {
+    flex-direction: column;
+  }
+  .interviewImg {
+    flex: none;
+    width: 100%;
+    max-width: 200px;
+  }
+  .reqTable th,
+  .reqTable td {
+    display: block;
+    width: 100%;
+  }
+  .reqTable th {
+    padding-bottom: 0;
+    border: none;
+    font-size: 0.8125rem;
+    color: var(--clr-main, #3FB5EA);
+  }
+}

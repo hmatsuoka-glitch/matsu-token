@@ -1,0 +1,128 @@
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.contactSection {
+  padding: 60px 0 80px;
+}
+
+.introText {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.telArea {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 24px;
+  background: #f8fafa;
+  border-radius: 8px;
+}
+.telLabel {
+  font-size: 0.75rem;
+  color: var(--clr-main, #3FB5EA);
+}
+.telNum {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-main, #3FB5EA);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.telTime {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formGroup label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #333;
+}
+.required::after {
+  content: '必須';
+  font-size: 0.6875rem;
+  color: #fff;
+  background: #e74c3c;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.input:focus,
+.textarea:focus {
+  border-color: var(--clr-main, #3FB5EA);
+  outline: none;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.formSubmit {
+  text-align: center;
+  margin-top: 16px;
+}
+.submitBtn {
+  display: inline-block;
+  padding: 16px 64px;
+  background: linear-gradient(315deg, #4CC6D8 0%, #0CCFA8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.submitBtn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .radioGroup {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .submitBtn {
+    width: 100%;
+    padding: 16px;
+  }
+}
