@@ -16,8 +16,12 @@ export default function Recruit() {
         </div>
       </div>
       <div className={styles.imgarea}>
-        <div className={`${styles.imgareaBox} placeholder`}>RECRUIT IMAGE 1</div>
-        <div className={`${styles.imgareaBox} placeholder`}>RECRUIT IMAGE 2</div>
+        <div className={styles.imgareaBox}>
+          <img src="/RECRUIT01_若手職人笑顔.jpg" alt="若手職人" loading="lazy" />
+        </div>
+        <div className={styles.imgareaBox}>
+          <img src="/RECRUIT02_チーム集合写真.jpg" alt="チーム集合写真" loading="lazy" />
+        </div>
       </div>
     </section>
   );

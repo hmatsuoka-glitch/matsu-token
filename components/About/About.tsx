@@ -6,10 +6,16 @@ export default function About() {
       <div className={styles.flex}>
         <div className={styles.imgarea}>
           <div className={styles.aboutImg01}>
-            <div className={`${styles.aboutImg01Box} placeholder`}>ABOUT IMAGE 1</div>
+            <div className={styles.aboutImg01Box}>
+              <img src="/ABOUT01_ベテラン職人ポートレート.jpg" alt="ベテラン職人" loading="lazy" />
+            </div>
           </div>
-          <div className={`${styles.aboutImg02} placeholder`}>ABOUT IMAGE 2</div>
-          <div className={`${styles.aboutImg03} placeholder`}>ABOUT IMAGE 3</div>
+          <div className={styles.aboutImg02}>
+            <img src="/ABOUT02_チーム作業.jpg" alt="チーム作業" loading="lazy" />
+          </div>
+          <div className={styles.aboutImg03}>
+            <img src="/ABOUT03_塗装完了住宅.jpg" alt="塗装完了住宅" loading="lazy" />
+          </div>
         </div>
         <div className={styles.txtarea}>
           <h2 className={styles.homeTtl}>
