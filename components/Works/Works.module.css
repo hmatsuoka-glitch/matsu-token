@@ -223,6 +223,34 @@
   opacity: 0.8;
 }
 
+.comingSoon {
+  width: 75%;
+  margin: 40px auto 0;
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--clr-wht);
+  background-image: linear-gradient(135deg, #e7faf7 0%, #ffffff 60%);
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.comingSoonTtl {
+  font-family: var(--font-jp), var(--font-noto-sans-jp);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: var(--clr-main);
+  margin-bottom: 16px;
+}
+
+.comingSoonTxt {
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  color: #555;
+}
+
 @media screen and (max-width: 767px) {
   .worksSlideItem {
     flex: 0 0 100%;
@@ -238,5 +266,18 @@
   .fontJp {
     font-size: 22px;
     letter-spacing: 4px;
+  }
+  .comingSoon {
+    width: 90%;
+    padding: 48px 16px;
+    margin-top: 24px;
+  }
+  .comingSoonTtl {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .comingSoonTxt {
+    font-size: 13px;
+    line-height: 1.8;
   }
 }
