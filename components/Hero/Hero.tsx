@@ -4,7 +4,7 @@ import styles from './Hero.module.css';
 
 const slides = [
   { src: '/SLIDE01_職人ローラー外壁塗装.jpg', alt: '職人によるローラー外壁塗装' },
-  { src: '/SLIDE02_屋根塗装スプレー.jpg', alt: '屋根塗装スプレー作業' },
+  { src: '/SLIDE02_屋根塗装刷毛.jpg', alt: '屋根の刷毛塗装' },
   { src: '/SLIDE03_工事現場全景.jpg', alt: '工事現場の全景' },
 ];
 
